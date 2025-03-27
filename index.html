@@ -137,19 +137,14 @@
             const redirects = {
                 "UNDERTHEROCK": "https://google.com",
                 "YOUFOUNDME": "https://pinterest.com",
-                "youfoundme": "https://pinterest.com",
                 "EVERYTHINGISCONNECTED": "https://youtube.com",
-                "everythingisconnected": "https://youtube.com",
                 "CHRISTOPHER": "https://facebook.com",
-                "christopher": "https://facebook.com",
                 "WELLINGTON": "https://yahoo.com",
-                "wellington": "https://yahoo.com",
-                "MURDERER": "https://openai.com",
-                "murderer": "https://openai.com",
+                "MURDERER": "https://openai.com"
             };
 
             if (validAgentIDs.includes(number) && redirects[password]) {
-                window.open(redirects[password], '_blank');
+                window.location.href = redirects[password];
             } else {
                 errorDiv.style.visibility = 'visible';
             }
