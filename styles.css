@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    font-family: "manifold-cf", sans-serif;
+    font-family: "manifold-cf", sans-serif !important;
     font-weight: 600;
     font-style: normal;
 }
