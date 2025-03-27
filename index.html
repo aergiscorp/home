@@ -4,61 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AERGIS</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manifold+Extended&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Manifold+CF&display=swap'); 
-        
-        body {
-            background-color: black;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            font-family: 'Manifold CF', sans-serif;
-        }
-        h2 {
-            font-family: 'Manifold Extended', sans-serif;
-            font-size: 2em;
-        }
-        input {
-            background-color: black;
-            border: 1px solid white;
-            color: white;
-            padding: 10px;
-            margin: 5px;
-            width: 200px;
-            font-family: 'Manifold CF', sans-serif;
-            border-radius: 10px;
-            position: relative;
-        }
-        button {
-            background-color: white;
-            color: black;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-family: 'Manifold CF', sans-serif;
-            border-radius: 10px;
-            font-weight: bold;
-            margin-top: 15px;
-        }
-        .logo {
-            width: 300px;
-            height: auto;
-            margin-bottom: 20px;
-            pointer-events: none;
-            border-radius: 10px;
-        }
-        .error-message {
-            color: #ff6b6b;
-            font-size: 12px;
-            margin-top: 10px;
-            visibility: hidden;
-            height: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/vsa4qca.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <img src="https://i.ibb.co/S4RRCKw5/Screenshot-2025-03-27-at-20-06-43.png" alt="AERGIS Logo" class="logo">
@@ -71,20 +18,11 @@
         let passwordValue = "";
         
         const validAgentIDs = [
-            "744032567891",
-            "744158329476",
-            "744904765321",
-            "744672398105",
-            "744531247890",
-            "744786543210",
-            "744394857261",
-            "744629173845",
-            "744217594638",
-            "744850372916",
-            "744963258147",
-            "744105487329",
-            "744738291564",
-            "744482610973"
+            "744032567891", "744158329476", "744904765321",
+            "744672398105", "744531247890", "744786543210",
+            "744394857261", "744629173845", "744217594638",
+            "744850372916", "744963258147", "744105487329",
+            "744738291564", "744482610973"
         ];
 
         function maskPassword() {
