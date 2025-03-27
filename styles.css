@@ -1,61 +1,41 @@
-input, button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    border-radius: 10px; /* coins arrondis */
-    transition: all 0.3s ease-in-out; /* transition fluide */
+@import url("https://use.typekit.net/vsa4qca.css");
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "manifold-cf", sans-serif !important;
+}
+
+h2 {
+    font-family: "manifold-cf", sans-serif;
+    font-size: 2em;
 }
 
 input {
-    border: 2px solid white;
-    font-family: "manifold-cf", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    background-color: transparent;
+    background-color: black;
+    border: 1px solid white;
     color: white;
-    outline: none;
-}
-
-input:focus {
-    border-color: #f5a5a5; /* léger changement de couleur au focus */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    font-family: "manifold-cf", sans-serif;
+    border-radius: 10px;
+    position: relative;
 }
 
 button {
-    font-family: "manifold-cf", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+
     background-color: white;
     color: black;
-    border: 2px solid white;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out; /* animation fluide */
-    width: auto;
-    margin: 10px auto;
     padding: 10px 20px;
-}
-
-button:hover {
-    background-color: #ddd;
-    transform: scale(1.05); /* effet de zoom léger au survol */
-}
-
-button:active {
-    transform: scale(0.95); /* effet de pression */
-}
-
-.error-message {
-    visibility: hidden;
-    color: #f5a5a5;
+    border: none;
+    cursor: pointer;
     font-family: "manifold-cf", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-}
-
-.error-message.visible {
-    visibility: visible;
-    opacity: 1;
-}
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
