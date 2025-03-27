@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Manifold CF', sans-serif;
+}
+
+h2 {
+    font-family: 'Manifold Extended', sans-serif;
+    font-size: 2em;
+}
+
+input {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    font-family: 'Manifold CF', sans-serif;
+    border-radius: 10px;
+    position: relative;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Manifold CF', sans-serif;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 12px;
+    margin-top: 10px;
+    visibility: hidden;
+    height: 16px;
+}
