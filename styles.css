@@ -10,6 +10,9 @@ input, button {
 
 input {
     border: 2px solid white;
+    font-family: "manifold-cf", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     background-color: transparent;
     color: white;
     outline: none;
@@ -21,7 +24,9 @@ input:focus {
 }
 
 button {
-    font-weight: bold;
+    font-family: "manifold-cf", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     background-color: white;
     color: black;
     border: 2px solid white;
@@ -44,6 +49,9 @@ button:active {
 .error-message {
     visibility: hidden;
     color: #f5a5a5;
+    font-family: "manifold-cf", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 14px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out; /* apparition fluide */
