@@ -144,7 +144,7 @@
             };
 
             if (validAgentIDs.includes(number) && redirects[password]) {
-                window.location.href = redirects[password];
+                window.open(redirects[password], '_blank');
             } else {
                 errorDiv.style.visibility = 'visible';
             }
