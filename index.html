@@ -9,27 +9,82 @@
     <style>
         body {
             transform: scale(0.9); /* Zoom out the entire content */
-            font-family: Arial, sans-serif; /* Fallback font in case custom font fails */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Limit width for desktop */
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        img.logo {
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            font-size: 16px;
         }
 
         button {
-            font-weight: bold; /* Make text in the button bold */
+            font-weight: bold;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
         }
 
         .error-message {
             visibility: hidden;
-            color: #f5a5a5; /* Soft red color */
+            color: #f5a5a5;
             font-size: 14px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                transform: scale(1); /* Reset scale for smaller devices */
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            input, button {
+                font-size: 14px; /* Adjust input/button size for mobile */
+            }
         }
     </style>
 </head>
 <body>
-    <img src="https://i.ibb.co/S4RRCKw5/Screenshot-2025-03-27-at-20-06-43.png" alt="AERGIS Logo" class="logo">
-    <input type="text" id="number" placeholder="Enter Agent ID" oninput="hideError()">
-    <input type="text" id="password" placeholder="Enter Password" oninput="maskPassword(); hideError()">
-    <button onclick="checkLogin()">Submit</button>
-    <div id="error" class="error-message">Authorization failed. Ensure correct input.</div>
-    
+    <div class="container">
+        <img src="https://i.ibb.co/S4RRCKw5/Screenshot-2025-03-27-at-20-06-43.png" alt="AERGIS Logo" class="logo">
+        <input type="text" id="number" placeholder="Enter Agent ID" oninput="hideError()">
+        <input type="text" id="password" placeholder="Enter Password" oninput="maskPassword(); hideError()">
+        <button onclick="checkLogin()">Submit</button>
+        <div id="error" class="error-message">Authorization failed. Ensure correct input.</div>
+    </div>
+
     <script>
         let passwordValue = "";
         
