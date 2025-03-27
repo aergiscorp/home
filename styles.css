@@ -25,7 +25,7 @@ input {
     padding: 10px;
     margin: 5px;
     width: 200px;
-    font-family: "manifold-cf", sans-serif;
+    font-family: "Courier New", monospace !important;
     font-weight: 600;
     font-style: normal;
     border-radius: 10px;
