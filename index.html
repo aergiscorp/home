@@ -18,19 +18,22 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden; /* Prevent scrolling */
         }
 
         .container {
             width: 100%;
-            max-width: 400px; /* Limit width for desktop */
+            max-width: 450px; /* Increased width for better layout */
             padding: 20px;
             box-sizing: border-box;
             text-align: center;
+            border-radius: 20px; /* Rounded corners for the container */
+            background-color: #222; /* Dark background inside the container */
         }
 
         img.logo {
             width: 100%;
-            max-width: 200px;
+            max-width: 250px; /* Increased logo size */
             margin-bottom: 20px;
         }
 
@@ -40,7 +43,7 @@
             margin: 10px 0;
             box-sizing: border-box;
             font-size: 16px;
-            border-radius: 4px;
+            border-radius: 10px; /* Rounded corners for input fields and button */
         }
 
         input {
