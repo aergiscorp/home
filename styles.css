@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/vsa4qca.css");
+
 body {
     background-color: black;
     color: white;
@@ -6,15 +8,11 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    font-family: "Courier New", monospace !important;
-    font-weight: 600;
-    font-style: normal;
+    font-family: "manifold-cf", sans-serif !important;
 }
 
 h2 {
     font-family: "manifold-cf", sans-serif;
-    font-weight: 600;
-    font-style: normal;
     font-size: 2em;
 }
 
@@ -25,9 +23,7 @@ input {
     padding: 10px;
     margin: 5px;
     width: 200px;
-    font-family: "Courier New", monospace !important;
-    font-weight: 600;
-    font-style: normal;
+    font-family: "manifold-cf", sans-serif;
     border-radius: 10px;
     position: relative;
 }
@@ -39,25 +35,7 @@ button {
     border: none;
     cursor: pointer;
     font-family: "manifold-cf", sans-serif;
-    font-weight: 600;
-    font-style: normal;
     border-radius: 10px;
     font-weight: bold;
     margin-top: 15px;
-}
-
-.logo {
-    width: 300px;
-    height: auto;
-    margin-bottom: 20px;
-    pointer-events: none;
-    border-radius: 10px;
-}
-
-.error-message {
-    color: #ff6b6b;
-    font-size: 12px;
-    margin-top: 10px;
-    visibility: hidden;
-    height: 16px;
 }
