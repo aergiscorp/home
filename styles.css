@@ -6,11 +6,15 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    font-family: 'Manifold CF', sans-serif;
+    font-family: "manifold-cf", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 h2 {
-    font-family: 'Manifold Extended', sans-serif;
+    font-family: "manifold-cf", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 2em;
 }
 
@@ -21,7 +25,9 @@ input {
     padding: 10px;
     margin: 5px;
     width: 200px;
-    font-family: 'Manifold CF', sans-serif;
+    font-family: "manifold-cf", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     border-radius: 10px;
     position: relative;
 }
@@ -32,7 +38,9 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-family: 'Manifold CF', sans-serif;
+    font-family: "manifold-cf", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     border-radius: 10px;
     font-weight: bold;
     margin-top: 15px;
