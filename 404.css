@@ -1,0 +1,42 @@
+@import url("https://use.typekit.net/vsa4qca.css");
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "manifold-cf", sans-serif !important;
+}
+
+h2 {
+    font-family: "manifold-cf", sans-serif;
+    font-size: 2em;
+}
+
+input {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    font-family: "manifold-cf", sans-serif;
+    border-radius: 10px;
+    position: relative;
+}
+
+button {
+
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: "manifold-cf", sans-serif;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+}
