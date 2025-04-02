@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aergis Emergency Directive</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #text-container {
+            white-space: pre-line;
+            max-width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div id="text-container"></div>
+
+    <script>
+        const text = `<b>FROM</b>: Aergis Internal Security (Redacted)
+<b>TO</b>: Ops Team - Immediate Response
+<b>SUBJECT</b>: Emergency Directive - Data Handling
+
+We have a problem. Footage was <b>NOT</b> purged correctly. The logs show access from an <b>external source</b> at <b>03:50 AM</b>.
+
+This is unacceptable. All remaining traces must be scrubbed. Ensure that all personnel involved understand the importance of this directive. If required, escalate containment measures through proper channels.
+
+<b>DO NOT</b> leave anything behind. Secure and <b><i>BURN</i></b> <b><i>EVERYTHING</i></b> related materials as per protocol.
+
+The source of the breach must be identified. Confirm whether access was external or internal. If external, eliminate all traces of unauthorized entry. If internal, determine the cause and take corrective action immediately.
+
+Backup servers must be verified manually. Automated logs alone are <b>not sufficient</b>. Conduct a <b>full audit</b> of all storage devices to confirm successful removal of sensitive data.
+
+Once the purge is complete, submit confirmation <b>without delay</b>. Any deviation from protocol will be investigated.
+
+<b>Containment is the priority.</b>`;
+        
+        const words = text.split(" ");
+        const container = document.getElementById("text-container");
+        let index = 0;
+
+        function revealText() {
+            if (index < words.length) {
+                container.innerHTML += words[index] + " ";
+                index++;
+                setTimeout(revealText, 100);
+            }
+        }
+
+        revealText();
+    </script>
+</body>
+</html>
