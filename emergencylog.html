@@ -15,11 +15,12 @@
             align-items: flex-start;
             justify-content: flex-start;
             height: 100vh;
-            overflow: hidden;
+            overflow-y: auto; /* Allow scrolling */
         }
         #text-container {
             white-space: pre-line;
             max-width: 90%;
+            padding-bottom: 20px; /* Add extra space at the bottom */
         }
     </style>
 </head>
@@ -72,6 +73,12 @@ Once the purge is complete, submit confirmation <b>without delay</b>. Any deviat
             if (index < words.length) {
                 container.innerHTML += words[index] + " ";
                 index++;
+                
+                // Check if the text is near the bottom and scroll if needed
+                if (container.scrollHeight - container.scrollTop <= container.clientHeight + 100) {
+                    window.scrollBy(0, 30); // Scroll down a little
+                }
+
                 setTimeout(revealText, 100);
             }
         }
